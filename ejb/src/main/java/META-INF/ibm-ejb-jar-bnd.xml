@@ -1,0 +1,65 @@
+<ejb-jar-bnd>
+<session name="FacadeCadastroPropostaCreditoServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadeCadastroPropostaCreditoServico" binding-name="propostacredito/FacadeCadastroPropostaCreditoServicoRemote" />
+</session>
+<session name="FacadeConsultaPropostaCreditoServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadeConsultaPropostaCreditoServico" binding-name="propostacredito/FacadeConsultaPropostaCreditoServicoRemote" />
+</session>
+<session name="FacadeAnaliseTecnicaPropostaCreditoServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadeAnaliseTecnicaPropostaCreditoServico" binding-name="propostacredito/FacadeAnaliseTecnicaPropostaCreditoServicoRemote" />
+</session>
+<session name="FacadeEstudoPropostaCreditoServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadeEstudoPropostaCreditoServico" binding-name="propostacredito/FacadeEstudoPropostaCreditoServicoRemote" />
+</session>
+<session name="FacadeLiberacaoCreditoServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadeLiberacaoCreditoServico" binding-name="propostacredito/FacadeLiberacaoCreditoServicoRemote" />
+</session>
+<session name="FacadeConducaoPropostaCreditoServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadeConducaoPropostaCreditoServico" binding-name="propostacredito/FacadeConducaoPropostaCreditoServicoRemote" />
+</session>
+<session name="FacadeConducaoPropostaCreditoServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadeConducaoPropostaCreditoServico" binding-name="propostacredito/FacadeConducaoPropostaCreditoServicoRemote" />
+</session>
+<session name="FacadeWorkflowPropostaCreditoServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadeEstudoPropostaCreditoServico" binding-name="propostacredito/FacadeWorkflowPropostaCreditoServicoRemote" />
+</session>
+<session name="FacadeDocumentacaoPropostaCreditoServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadeDocumentacaoPropostaCreditoServico" binding-name="propostacredito/FacadeDocumentacaoPropostaCreditoServicoRemote" />
+</session>
+<session name="FacadePropostaCreditoServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadePropostaCreditoServicoLocal" binding-name="ejblocal:propostacredito/FacadePropostaCreditoServicoLocal" />
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadePropostaCreditoServicoRemote" binding-name="propostacredito/FacadePropostaCreditoServicoRemote" />
+</session>
+<session name="FacadeFormalizacaoPropostaCreditoServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadeFormalizacaoPropostaCreditoServico" binding-name="propostacredito/FacadeFormalizacaoPropostaCreditoServicoRemote" />
+</session>
+<session name="ConectorFormalizacaoPropostaCreditoServicoEJB">
+	<interface class="br.com.sicoob.sisbr.formalizacao.conector.servicos.java.IJavaConnectorServiceRemote" binding-name="propostacredito/ConectorFormalizacaoPropostaCreditoServicoRemote" />
+</session>
+<session name="IntegracaoComposicaoServicoCreditoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.interfaces.IntegracaoComposicaoServicoCreditoRemote" binding-name="propostacredito/IntegracaoComposicaoServicoCreditoRemote" />
+</session>
+<session name="FacadeGarantiaPropostaCreditoServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadeGarantiaPropostaCreditoServico" binding-name="propostacredito/FacadeGarantiaPropostaCreditoServicoRemote" />
+</session>
+<session name="SubmeterPropostaServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.SubmeterPropostaServico" binding-name="ejblocal:propostacredito/SubmeterPropostaServicoLocal" />
+	<interface class="br.com.bancoob.srtb.servico.Transacao" binding-name="propostacredito/AprovacaoPropostaCreditoServicoRemote" />
+</session>
+<session name="ReprocessamentoMensagemNotificacaoAlcadaEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.ReprocessamentoMensagemNotificacaoAlcadaServico" binding-name="ejblocal:propostacredito/ReprocessamentoMensagemNotificacaoAlcadaServicoLocal" />
+</session>
+<session name="FacadeAdapterCreditoServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.interfaces.FacadeAdapterCreditoServicoLocal" binding-name="ejblocal:propostacredito/FacadeAdapterCreditoServicoLocal" />
+</session>
+<session name="NotificacaoNiveisAlcadasServicoEJB">
+	<interface class="br.com.sicoob.sisbr.alc.integracao.notificacao.interfaces.IAlcadasNotificaoProcessoAprovacao" binding-name="ejblocal:propostacredito/NotificacaoNiveisAlcadasServico" />
+</session>
+<session name="PropostaCreditoIntegracaoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadePropostaCreditoIntegracaoServico" binding-name="propostacredito/PropostaCreditoIntegracaoServicoRemote" />
+</session>
+<session name="FacadeAprovacaoPropostaCreditoServicoEJB">
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadeAprovacaoPropostaCreditoServicoLocal" binding-name="ejblocal:propostacredito/FacadeAprovacaoPropostaCreditoServicoLocal" />
+	<interface class="br.com.sicoob.credito.propostacredito.negocio.servicos.FacadeAprovacaoPropostaCreditoServicoRemote" binding-name="propostacredito/FacadeAprovacaoPropostaCreditoServicoRemote" />
+</session>
+</ejb-jar-bnd>
